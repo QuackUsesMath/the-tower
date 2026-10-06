@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://rgjqjn7slgy"
+path="res://.godot/imported/edited light beam 1.ogg-3a9a4028fbff180ec636d80a7d5cd0ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://edited light beam 1.ogg"
+dest_files=["res://.godot/imported/edited light beam 1.ogg-3a9a4028fbff180ec636d80a7d5cd0ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bij03lwlo5s31"]
+
+[ext_resource type="Script" uid="uid://bm5aav2f47slp" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://d7x1h3wo0vbk" path="res://icon.svg" id="3_hqtel"]
+[ext_resource type="Script" uid="uid://dd8tb0yxjgpq8" path="res://light_pool.gd" id="3_i3pqv"]
+[ext_resource type="AudioStream" uid="uid://rgjqjn7slgy" path="res://edited light beam 1.ogg" id="3_sweqy"]
+[ext_resource type="PackedScene" uid="uid://3gjwonb7cjbn" path="res://bullet_scene.tscn" id="5_sweqy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o0ce2"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1287804570]
+script = ExtResource("1_4flbx")
+bullet_scene = ExtResource("5_sweqy")
+beam_sound_stream = ExtResource("3_sweqy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1706648709]
+scale = Vector2(25, 25)
+
+[node name="BeamLine" type="Line2D" parent="." unique_id=160868459]
+
+[node name="BeamRay" type="RayCast2D" parent="." unique_id=386638540]
+
+[node name="Barrier" type="Node2D" parent="." unique_id=1197851737]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2011665039]
+shape = SubResource("CircleShape2D_o0ce2")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1628591174]
+position = Vector2(-4.7683716e-07, 0)
+scale = Vector2(0.15234375, 0.16210938)
+texture = ExtResource("3_hqtel")
+
+[node name="LightPool" type="Node" parent="." unique_id=1041912864]
+script = ExtResource("3_i3pqv")
+metadata/_custom_type_script = "uid://bm5aav2f47slp"
